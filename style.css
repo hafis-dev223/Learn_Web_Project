@@ -1,0 +1,44 @@
+.container-1 {
+  padding-left: 30px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-right: 35px;
+  margin-left: 30px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  border: 1px solid #b7b7ba58;
+  height: 50px;
+  padding-bottom: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #b7b7ba58;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 1px 100px;
+  backdrop-filter: brightness(10px);
+}
+
+li a {
+  padding-left: 10px;
+  list-style: none;
+}
+
+nav ul li a :hover {
+  color: rgb(57, 57, 238);
+  box-shadow: 0 0px 30px;
+}
+
+nav i {
+  color: #8e8e93;
+}
