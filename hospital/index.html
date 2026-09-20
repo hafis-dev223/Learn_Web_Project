@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <title>Hospital</title>
+  </head>
+  <style>
+    body {
+      background-color: #ffff;
+      padding: 0px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      color: #0f172a;
+      margin: 0px;
+      width: 100%;
+      background-attachment: scroll;
+      min-height: 100vh;
+      overflow: auto;
+      background: radial-gradient(circle at center, #e6f2ff 0%, #b3d9ff 50%, #80bfff 100%);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 15px 30px;
+      margin-top: 15px 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      justify-content: space-between;
+    }
+
+    .container-1 {
+      border: 1px solid rgba(62, 60, 60, 0.338);
+      display: flex;
+      padding-left: 20px;
+      height: 50px;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow:
+        0 0px 32px 0 rgba(2, 50, 98, 0.2),
+        inset 0 0 15px rgba(255, 255, 255, 0.834);
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      min-width: 500px;
+      max-height: 600px;
+      opacity: 0, 5;
+    }
+
+    nav ul :hover {
+      color: royalblue;
+    }
+
+    .Judul {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .Judul h2 {
+      display: flex;
+      padding: 0px;
+      margin-left: 20px;
+      margin-top: 2px;
+    }
+
+    .Judul img {
+      height: 35px;
+      width: auto;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    li a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+
+    .container_2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.4);
+      border: 1px solid rgb(156, 189, 251);
+      height: 300%;
+      padding: 20px 50px;
+      min-width: 500px;
+      min-height: 100px;
+      backdrop-filter: blur(20px);
+    }
+    .halaman_judul h1 {
+      margin-left: 50px;
+      margin-top: 20px;
+      font-size: 40px;
+    }
+
+    .halaman_judul p {
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+
+    .Butoon {
+      display: inline-block;
+      background-color: #2b6cd4;
+      color: #ffffff;
+      padding: 12px 28px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 100;
+      border: none;
+      margin-top: 10px;
+      margin-left: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .Butoon:hover {
+      background-color: #2f70d7;
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 3px 25px #0046ada4;
+    }
+
+    .gambar_hero img {
+      max-height: 300px;
+      width: auto;
+      display: block;
+      mix-blend-mode: multiply;
+      min-width: auto;
+      max-width: 310px;
+    }
+
+    .halaman-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      padding: 15px 0;
+      padding-left: 30px;
+
+      background-color: #0066ff;
+      box-shadow: 0 0 15px #0066ff;
+      min-width: 600px;
+    }
+
+    .judul h4 {
+      text-align: center;
+      color: #0066ff;
+      text-shadow: 0 2px 5px rgba(11, 62, 244, 0.45);
+
+      margin-right: 15px;
+      margin-top: 20px;
+    }
+
+    .judul h1 {
+      text-align: center;
+      margin-right: 15px;
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+
+    .container-3 .fitur-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 40px;
+    }
+
+    .container-3 .gambar-1 {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .container-3 .gambar-1 img {
+      height: 70px;
+      border: 1px solid rgba(11, 62, 240, 0.2);
+      border-radius: 80px;
+      background-color: #2b6cd4;
+      mix-blend-mode: multiply;
+    }
+
+    .container-3 .gambar-2 {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .container-3 .gambar-2 img {
+      height: 70px;
+      border: 1px solid rgba(60, 204, 60, 0.338);
+      border-radius: 80px;
+      background-color: rgba(60, 204, 60, 0.338);
+    }
+
+    .halaman-footer {
+      padding: 5px 10px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .nav {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
+    }
+
+    h4 {
+      justify-content: center;
+      margin-left: 20px;
+    }
+
+    .nav a {
+      justify-content: center;
+
+      align-items: center;
+    }
+  </style>
+  <body>
+    <header id="judul">
+      <div class="container-1">
+        <div class="Judul">
+          <img src="Hospital Logo Design With Shield Icon PNG Images _ PNG Free Download - Pikbest.jpg" alt="logo" />
+          <h2>Hospital</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#konsultasi">Konsultasi</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container_2">
+          <div class="halaman_judul">
+            <h1>
+              Pelayanan Kesehatan <br />
+              untuk anda
+            </h1>
+
+            <p>
+              Kami siap membantu anda sepenuh hati <br />
+              kalo mati jangan salahin kita
+            </p>
+
+            <div class="tombolku">
+              <a href="#konsultasi" class="Butoon">Konsultasi Sekarang &rarr;</a>
+            </div>
+          </div>
+
+          <div class="gambar_hero">
+            <img src="undraw_medicine_hqqg.png" alt="Dokter Profesional" />
+          </div>
+        </div>
+      </section>
+
+      <section class="About">
+        <div class="container-3">
+          <div class="judul">
+            <h4>Kenapa pilih kami ?</h4>
+            <h1>Layanan Terbaik Untuk Anda</h1>
+          </div>
+
+          <div class="fitur-wrapper">
+            <div class="gambar-1">
+              <img src="alat.png" alt="alatDokter" />
+              <div class="teks-dokter">
+                <h3>Dokter Profesional</h3>
+                <p>di dukung oleh tenaga medis yang jago...</p>
+              </div>
+            </div>
+
+            <div class="gambar-2">
+              <img src="ChatGPT Image Sep 18, 2026, 09_41_43 PM.png" alt="fasilitas" />
+              <div class="teks-dokter">
+                <h3>Fasilitas Modern</h3>
+                <p>di dukung oleh fasilitas canggih...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="halaman-footer">
+        <h4>&copy; 2026 RS Pasrah Sejahtera.By Muhamad Hafiidh full stack web.</h4>
+
+        <ul class="nav">
+          <li><a href="#Instagra">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#consultasi">Consultasi</a></li>
+        </ul>
+        <hr />
+      </div>
+    </footer>
+  </body>
+</html>
