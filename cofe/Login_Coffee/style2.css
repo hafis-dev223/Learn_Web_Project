@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container1 {
+  border: 1px solid rgba(212, 163, 115, 0.3);
+  height: 550px;
+  width: 800px;
+  padding: 5px;
+  padding-right: 20px;
+  border-radius: 10px;
+  align-items: flex-end;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow:
+    0 8px 32px 0 rgba(0, 0, 0, 0.6),
+    0 0 25px 2px rgba(215, 141, 66, 0.25);
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("coffee.jpg");
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.text-judul {
+  text-align: left;
+  padding: 40px 30px;
+  font-family: arial;
+  font-size: 15px;
+  width: 50%;
+  padding-left: 90px;
+  margin-top: 150px;
+}
+
+.text-judul h2 {
+  background: linear-gradient(135deg, #fff8e7 0%, #e0a96d 50%, #c87d55 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.prompt-login {
+  text-align: left;
+  padding: 30px;
+  font-family: arial;
+  margin-top: -200px;
+  font-size: 13px;
+  margin-bottom: auto;
+  margin-left: 60%;
+}
+
+.prompt-login p {
+  margin-left: 200px;
+  margin: 0px;
+}
+
+.prompt-login input {
+  padding: 10px 15px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+.prompt-login button {
+  width: 200px;
+  height: 25px;
+  margin-top: 35px;
+  border-radius: 20px;
+  border: 1px solid rgba(212, 163, 115, 0.3);
+  background: linear-gradient(135deg, #e0a96d 0%, #c87d55 100%);
+  color: #1c100a; 
+  font-weight: bold;
+  border: 1px solid #e0a96d;
+  box-shadow: 0 4px 15px rgba(224, 169, 109, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prompt-login button:hover {
+    background: linear-gradient(135deg, #c87d55 0%, #a05a36 100%);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(200, 125, 85, 0.5);
+}
+
+.prompt-login input:focus,
+.prompt-login input:hover {
+  box-shadow:
+    0 0 15px rgba(224, 169, 109, 0.4),
+    0 8px 25px rgba(0, 0, 0, 0.6);
+  border-color: #e0a96d;
+  outline: none;
+}
