@@ -1,0 +1,60 @@
+.container2 {
+  padding: 20px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  width: 183vh;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+}
+
+.Cari-menu {
+  border: 1px solid rgb(100, 44, 3);
+  width: 200px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: left;
+  background: linear-gradient(145deg, rgba(129, 46, 4, 0.72) 0%, rgba(66, 24, 1, 0.9) 100%);
+ box-shadow:
+    0 20px 50px rgba(58, 30, 2, 0.5),
+    inset 0 1px 1px rgba(231, 99, 5, 0.25);
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.Cari-menu:hover {
+  box-shadow:
+    0 0 15px rgba(239, 125, 4, 0.4),
+    0 8px 25px rgba(0, 0, 0, 0.6);
+  border-color: #e0a96d;
+  outline: none;
+}
+
+.Cari-menu::placeholder {
+  color: #ffff;
+  text-align: center;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #12100e;
+  background-image: radial-gradient(at 0% 0%, rgba(237, 120, 16, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(27, 11, 0, 0.12) 0px, transparent 50%);
+  background-attachment: fixed;
+  
+}
+
+.container2,
+svg {
+  display: flex;
+  margin-right: 10px;
+  color: aliceblue;
+  align-items: center;
+}
+
