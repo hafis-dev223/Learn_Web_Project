@@ -1,0 +1,32 @@
+const namaBarang = ["ayamGeprek", "NasiKuning", "NasiUduk", "ketupat"];
+const HargaBarang = [10000, 20000, 5000, 10000];
+const namaPelanggan = [];
+
+for (let i = 0; i < namaBarang.length; i++) {
+  let nama = prompt("masukan nama anda :");
+  namaPelanggan.push(nama);
+
+  if (namaPelanggan.includes(nama)) {
+    alert(`nama di temukan`);
+  }
+
+  let Namabarang = prompt("masukan nama pesanan anda :");
+
+  if (namaBarang[i].includes(Namabarang)) {
+    let index = namaBarang.indexOf(Namabarang);``
+    
+    alert(`barang di temukan ${HargaBarang[i]}`);
+
+    alert(`total pembayaran  anda : ${HargaBarang[i]}  `);
+
+    const inputHarga = prompt("masukan uang pembaran anda:");
+
+    const kembali = inputHarga - HargaBarang[i];
+
+    alert(`total kembalian anda ${kembali}`);
+
+    break;
+  } else {
+    alert("nama barang tidak di temukan");
+  }
+}
